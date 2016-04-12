@@ -1,4 +1,4 @@
-## dotfiles
+# dotfiles
 
 git repo of my dotfiles
 
