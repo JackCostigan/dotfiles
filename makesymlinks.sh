@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim"    # list of files/folders to symlink in homedir
+files="bashrc vimrc"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -29,4 +29,18 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# move existing .vim folder to the old dotfiles location
+echo "Moving existing .vim folder to $olddir"
+mv ~/.vim ~/dotfiles_old/
+
+# download vundle from github
+echo "Downloading Vundle from github"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# run vundle in order to download plugins
+echo "Running Vundle update to download plugins"
+vim -c VundleUpdate -c quitall
+
+echo "All done!"
 
