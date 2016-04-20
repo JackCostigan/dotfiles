@@ -89,6 +89,21 @@ set background=dark
 "enable syntax highlighting
 syntax on
 
+"show matching brackets
+set showmatch
+
+"Do case insesitive mathcing
+set ignorecase
+
+"If pattern contains an uppercase letter, then do case sesnitive search
+set smartcase
+
+"show next mactch while entering search
+set showmatch
+
+"enable mouse for all modes
+set mouse=a
+
 "enable solarized color scheme
 "colorscheme solarized
 
