@@ -124,9 +124,9 @@ endif
 colorscheme wombat256mod
 
 "no tabs
-set tabstop=8
+set tabstop=2
 set softtabstop=0
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set smarttab
 
