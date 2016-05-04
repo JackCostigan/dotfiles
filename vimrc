@@ -130,3 +130,13 @@ set expandtab
 set shiftwidth=2
 set smarttab
 
+"options for RainbowParentheses
+let g:rbpt_colorpairs = [
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+
