@@ -52,8 +52,7 @@ Plugin 'wlangstroth/vim-racket'
 Plugin 'michalbachowski/vim-wombat256mod'
 
 "add rainbow brackets
-Plugin 'rainbow_parentheses.vim'
-"Plugin 'oblitum/rainbow'
+Plugin 'junegunn/rainbow_parentheses.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -130,13 +129,9 @@ set expandtab
 set shiftwidth=2
 set smarttab
 
-"options for RainbowParentheses
-let g:rbpt_colorpairs = [
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['red',         'firebrick3'],
-    \ ]
-
+"Activation based on file type
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType lisp,clojure,scheme RainbowParentheses
+augroup END
 
