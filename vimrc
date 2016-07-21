@@ -135,3 +135,5 @@ augroup rainbow_lisp
   autocmd FileType lisp,clojure,scheme RainbowParentheses
 augroup END
 
+set t_Co=256
+
