@@ -30,8 +30,11 @@ Plugin 'VundleVim/Vundle.vim'
 "plugin for statusline at bottom
 Plugin 'vim-airline/vim-airline'
 
+"plugin for airline-themes
+Plugin 'vim-airline/vim-airline-themes'
+
 "Solarized color scheme
-"Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 
 "seoul256 color scheme
 "Plugin 'junegunn/seoul256.vim'
@@ -110,7 +113,7 @@ if has("autocmd")
 endif
 
 "enable solarized color scheme
-"colorscheme solarized
+colorscheme solarized
 
 "enable seoul256 color scheme
 "colo seoul256
@@ -120,7 +123,7 @@ endif
 "colorscheme badwolf
 
 "enable wombat256 color scheme
-colorscheme wombat256mod
+"colorscheme wombat256mod
 
 "no tabs
 set tabstop=2
@@ -135,5 +138,5 @@ augroup rainbow_lisp
   autocmd FileType lisp,clojure,scheme RainbowParentheses
 augroup END
 
-set t_Co=256
+"set t_Co=256
 
