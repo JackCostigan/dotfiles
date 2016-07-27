@@ -37,10 +37,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 
 "seoul256 color scheme
-"Plugin 'junegunn/seoul256.vim'
+Plugin 'junegunn/seoul256.vim'
 
 "badwolf color scheme
-"Plugin 'sjl/badwolf'
+Plugin 'sjl/badwolf'
 
 "add syntax highlighting for Rust
 Plugin 'rust-lang/rust.vim'
@@ -113,7 +113,7 @@ if has("autocmd")
 endif
 
 "enable solarized color scheme
-colorscheme solarized
+"colorscheme solarized
 
 "enable seoul256 color scheme
 "colo seoul256
@@ -123,7 +123,7 @@ colorscheme solarized
 "colorscheme badwolf
 
 "enable wombat256 color scheme
-"colorscheme wombat256mod
+colorscheme wombat256mod
 
 "no tabs
 set tabstop=2
