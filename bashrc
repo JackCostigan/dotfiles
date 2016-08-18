@@ -112,10 +112,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#originally had this stuff to fix color issues
+#i think it was causing more problems than it was solving
 #if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 #  export TERM='xterm-256color'
 #else
 #  export TERM='xterm-color'
 #fi
 
-export TERM='xterm-256color'
+#export TERM='xterm-256color'
