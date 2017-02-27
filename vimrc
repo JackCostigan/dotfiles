@@ -126,10 +126,10 @@ endif
 colorscheme wombat256mod
 
 "no tabs
-set tabstop=2
+set tabstop=4
 set softtabstop=0
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set smarttab
 
 "Activation based on file type
