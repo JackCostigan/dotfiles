@@ -48,6 +48,9 @@ Plugin 'rust-lang/rust.vim'
 "add haskell syntax highlighting
 Plugin 'vim-scripts/haskell.vim'
 
+"add pico8 syntax highlighting (almost identical to Lua afaik)
+Plugin 'justinj/vim-pico8-syntax'
+
 "add Racket syntax stuff
 Plugin 'wlangstroth/vim-racket'
 
