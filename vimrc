@@ -30,7 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 "plugin for statusline at bottom
 Plugin 'vim-airline/vim-airline'
 
-"plugin for airline-themes
+"plugin for airline-themes, adds visual options for status line
 Plugin 'vim-airline/vim-airline-themes'
 
 "Solarized color scheme
@@ -57,8 +57,11 @@ Plugin 'wlangstroth/vim-racket'
 "add wombat256mod color scheme
 Plugin 'michalbachowski/vim-wombat256mod'
 
-"add rainbow brackets
+"add rainbow brackets, makes it easier when working in lisp like languages
 Plugin 'junegunn/rainbow_parentheses.vim'
+
+"add nerdtree, allows for easier filesystem navigation
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
