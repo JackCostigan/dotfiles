@@ -121,3 +121,6 @@ fi
 #fi
 
 export TERM='xterm-256color'
+
+#disable ctrl-s freezing output, i want to be able to bind it to save in vim
+stty -ixon

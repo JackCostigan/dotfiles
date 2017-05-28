@@ -146,3 +146,7 @@ augroup END
 
 "set t_Co=256
 
+"map ctrl-s to save a file
+:nmap <C-s> :w<CR>
+:imap <C-s> <Esc>:w<CR>a
+
