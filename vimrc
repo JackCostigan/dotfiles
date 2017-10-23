@@ -34,13 +34,16 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 "Solarized color scheme
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 
 "seoul256 color scheme
-Plugin 'junegunn/seoul256.vim'
+"Plugin 'junegunn/seoul256.vim'
 
 "badwolf color scheme
-Plugin 'sjl/badwolf'
+"Plugin 'sjl/badwolf'
+
+"add wombat256mod color scheme
+Plugin 'michalbachowski/vim-wombat256mod'
 
 "add syntax highlighting for Rust
 Plugin 'rust-lang/rust.vim'
@@ -53,9 +56,6 @@ Plugin 'justinj/vim-pico8-syntax'
 
 "add Racket syntax stuff
 Plugin 'wlangstroth/vim-racket'
-
-"add wombat256mod color scheme
-Plugin 'michalbachowski/vim-wombat256mod'
 
 "add rainbow brackets, makes it easier when working in lisp like languages
 Plugin 'junegunn/rainbow_parentheses.vim'
@@ -106,11 +106,14 @@ set ignorecase
 "If pattern contains an uppercase letter, then do case sesnitive search
 set smartcase
 
-"show next mactch while entering search
+"show next matching bracket
 set showmatch
 
 "enable mouse for all modes
 set mouse=a
+
+"show next matching word when searching
+set incsearch
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -132,9 +135,9 @@ endif
 colorscheme wombat256mod
 
 "no tabs
-set tabstop=4
-set softtabstop=0
-set expandtab
+set tabstop=4       "number of visual spaces per tab
+set softtabstop=0   "number of spaces in tab when editing
+set expandtab       "tabs are spaces
 set shiftwidth=4
 set smarttab
 
